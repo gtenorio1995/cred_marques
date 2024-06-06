@@ -1,0 +1,23 @@
+{
+  "name": "cred-marques",
+  "version": "1.0.0",
+  "description": "Landing Page, para empresa consultoria financeira",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass ./src/styles/main.scss ./build/main.css --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gtenorio1995/cred_marques.git"
+  },
+  "author": "Gabriel Tenório de Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gtenorio1995/cred_marques/issues"
+  },
+  "homepage": "https://github.com/gtenorio1995/cred_marques#readme",
+  "devDependencies": {
+    "sass": "^1.77.4"
+  }
+}
