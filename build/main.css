@@ -1,3 +1,88 @@
+header {
+  width: 100%;
+}
+header .container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+}
+header .container .status_bar {
+  display: none;
+}
+header .container .brand {
+  grid-column: 1;
+}
+header .container nav {
+  display: none;
+}
+header .container #btn_zap {
+  display: none;
+}
+header .container #menu_burguer {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.25rem;
+  max-width: 3rem;
+  padding: 0.25rem 0.5rem;
+  background: none;
+  border: none;
+}
+header .container #menu_burguer span {
+  width: 100%;
+  background: #000;
+  height: 4px;
+}
+header .container #menu_burguer span:nth-child(1) {
+  border-bottom-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  background: hsl(120, 100%, 9%);
+}
+header .container #menu_burguer span:nth-child(2) {
+  border-bottom-right-radius: 0.25rem;
+  border-top-left-radius: 0.25rem;
+  background: hsl(180, 100%, 4%);
+}
+header .container #menu_burguer span:nth-child(3) {
+  border-bottom-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  background: hsl(120, 100%, 9%);
+}
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+#app {
+  width: 100dvw;
+  background-color: hsl(180, 100%, 97%);
+}
 
 /*# sourceMappingURL=main.css.map */
