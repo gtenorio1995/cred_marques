@@ -1,0 +1,32 @@
+@use '../../../config/colors.scss';
+@use 'sass:math';
+
+@function converter($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
+#reviews {
+    .cards {
+        display: flex;
+
+        .card-reviews {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: converter(16);
+            background-color: colors.$gray-light;
+            border-radius: converter(24);
+            padding: converter(24) converter(16);
+
+            .title-card {
+                display: flex;
+                align-items: center;
+                column-gap: converter(12);
+
+                >img {
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}

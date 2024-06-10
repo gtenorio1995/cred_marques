@@ -1,3 +1,9 @@
+@use 'sass:math';
+
+@function converter($px) {
+    @return math.div($px, 16) *1rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -10,11 +16,23 @@ body {
     height: 100dvh;
 }
 
+section {
+    padding: converter(24) converter(24);
+}
+
 h1,
 h2,
 h3,
 h4 {
     font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+    font-size: converter(24);
+    line-height: converter(32);
+    font-weight: 600;
+    margin: converter(24) 0;
+    text-transform: uppercase;
 }
 
 li {
@@ -27,4 +45,9 @@ a {
 
 button {
     cursor: pointer;
+}
+
+p {
+    line-height: converter(24);
+    font-size: converter(16);
 }

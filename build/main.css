@@ -134,6 +134,66 @@ header .container #menu_burguer.active span:nth-child(3) {
   margin-top: 3.75rem;
 }
 
+#services {
+  background-color: hsl(180, 100%, 97%);
+}
+#services .cards {
+  margin-top: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+#services .cards .card {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+#services .cards .card > img {
+  border-radius: 1.5rem;
+}
+
+#vantagens {
+  background-color: hsl(180, 88%, 87%);
+}
+#vantagens .cards {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.75rem;
+}
+#vantagens .cards .card-vantagens {
+  border: 1px solid hsl(180, 50%, 65%);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+#vantagens .cards .card-vantagens > img {
+  border-radius: 50%;
+}
+
+#reviews .cards {
+  display: flex;
+}
+#reviews .cards .card-reviews {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  background-color: hsl(0, 0%, 85%);
+  border-radius: 1.5rem;
+  padding: 1.5rem 1rem;
+}
+#reviews .cards .card-reviews .title-card {
+  display: flex;
+  align-items: center;
+  column-gap: 0.75rem;
+}
+#reviews .cards .card-reviews .title-card > img {
+  border-radius: 50%;
+}
+
 main {
   position: relative;
 }
@@ -148,6 +208,7 @@ main #btn-zap {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 25;
 }
 main #btn-zap:hover {
   transform: scale(1.1);
@@ -165,11 +226,23 @@ body {
   height: 100dvh;
 }
 
+section {
+  padding: 1.5rem 1.5rem;
+}
+
 h1,
 h2,
 h3,
 h4 {
   font-family: "Poppins", sans-serif;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 600;
+  margin: 1.5rem 0;
+  text-transform: uppercase;
 }
 
 li {
@@ -182,6 +255,11 @@ a {
 
 button {
   cursor: pointer;
+}
+
+p {
+  line-height: 1.5rem;
+  font-size: 1rem;
 }
 
 #app {

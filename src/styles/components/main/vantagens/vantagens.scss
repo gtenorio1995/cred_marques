@@ -1,0 +1,29 @@
+@use '../../../config/colors.scss';
+@use 'sass:math';
+
+@function converter($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
+#vantagens {
+    background-color: colors.$b-medium;
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        row-gap: converter(12);
+
+        .card-vantagens {
+            border: 1px solid colors.$b-medium-dark;
+            border-radius: converter(8);
+            padding: converter(8);
+            display: flex;
+            align-items: center;
+            column-gap: converter(8);
+
+            >img {
+                border-radius: 50%;
+            }
+        }
+    }
+}
