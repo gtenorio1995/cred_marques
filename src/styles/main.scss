@@ -1,8 +1,9 @@
 @use "./components/header/header.scss";
+@use "./components/main/main.scss";
 @use "./config/reset.scss";
 @use "./config/colors.scss";
 
 #app {
     width: 100vw;
-    background-color: colors.$b-light;
+    position: relative;
 }

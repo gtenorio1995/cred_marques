@@ -1,0 +1,28 @@
+@use '../../config/colors.scss';
+@use './hero/hero.scss';
+@use 'sass:math';
+
+@function converter($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
+main {
+    position: relative;
+
+    #btn-zap {
+        position: fixed;
+        bottom: 24px;
+        right: 24px;
+        background: colors.$b-light;
+        border: none;
+        padding: converter(8);
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

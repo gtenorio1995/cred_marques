@@ -1,0 +1,46 @@
+@use '../../../config/colors.scss';
+@use 'sass:math';
+
+@function converter($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
+#hero {
+    height: 100dvh;
+    margin-top: converter(94);
+    padding: converter(96) converter(24);
+    background: rgba(0, 0, 0, 0.5) url('../../../../../src/img/business.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+
+    h1 {
+        font-size: converter(48);
+        color: colors.$b-light;
+        line-height: converter(48);
+        margin-bottom: converter(56);
+
+        .title-hero {
+            font-size: converter(28);
+        }
+    }
+
+    .text-strong-hero {
+        font-weight: 600;
+        color: colors.$b-light;
+        font-size: converter(20);
+        font-family: 'Poppins', sans-serif;
+    }
+
+    #limpar-nome {
+        padding: converter(12) converter(24);
+        font-family: 'Poppins', sans-serif;
+        font-size: converter(16);
+        font-weight: 600;
+        border-radius: converter(8);
+        background-color: colors.$b-medium;
+        border: none;
+        margin-top: converter(60);
+    }
+}
