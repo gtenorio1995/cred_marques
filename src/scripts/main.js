@@ -25,5 +25,11 @@ function menuBurguer() {
     item.addEventListener("click", removeClass);
   });
 }
-
 menuBurguer();
+
+// MENU WHATSAP
+function menuZap() {
+  // captura dos elementos
+  const btnZap = document.querySelector("#btn_zap");
+}
+menuZap();
