@@ -21,10 +21,13 @@ main {
         border: none;
         padding: converter(8);
         border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         z-index: 25;
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
         &:hover {
             transform: scale(1.1);
