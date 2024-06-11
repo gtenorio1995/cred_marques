@@ -107,6 +107,7 @@ header .container #menu_burguer.active span:nth-child(3) {
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: darken;
+  transition: all 0.5s;
 }
 #hero h1 {
   font-size: 3rem;
