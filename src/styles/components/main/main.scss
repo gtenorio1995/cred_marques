@@ -3,6 +3,7 @@
 @use './services/services.scss';
 @use './vantagens/vantagens.scss';
 @use './reviews/reviews.scss';
+@use './contact/contact.scss';
 @use 'sass:math';
 
 @function converter($px) {

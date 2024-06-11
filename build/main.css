@@ -168,11 +168,15 @@ header .container #menu_burguer.active span:nth-child(3) {
   display: flex;
   align-items: center;
   column-gap: 0.5rem;
+  height: 160px;
 }
 #vantagens .cards .card-vantagens > img {
   border-radius: 50%;
 }
 
+#reviews {
+  background-color: hsl(180, 100%, 97%);
+}
 #reviews .cards {
   display: flex;
 }
@@ -194,6 +198,62 @@ header .container #menu_burguer.active span:nth-child(3) {
   border-radius: 50%;
 }
 
+#contact {
+  display: flex;
+  flex-direction: column;
+}
+#contact .limpa-contact {
+  background-color: hsl(180, 88%, 87%);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+#contact .limpa-contact > p {
+  font-weight: 700;
+  line-height: 1.75rem;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+#contact form p {
+  margin-bottom: 1rem;
+}
+#contact form > input::placeholder,
+#contact form textarea::placeholder {
+  font-size: 0.875rem;
+  font-family: "Poppins", sans-serif;
+  color: #aaa;
+}
+#contact form > input {
+  line-height: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid hsl(180, 88%, 87%);
+  background-color: hsl(180, 100%, 97%);
+  font-size: 1rem;
+}
+#contact form textarea {
+  height: 7.5rem;
+  line-height: 1.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid hsl(180, 88%, 87%);
+  font-size: 1rem;
+  resize: none;
+}
+#contact form button[type=submit] {
+  padding: 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border-radius: 0.5rem;
+  border: 1px solid hsl(180, 88%, 87%);
+  background-color: hsl(180, 100%, 97%);
+}
+#contact form button[type=submit]:hover {
+  background-color: hsl(180, 88%, 87%);
+}
+
 main {
   position: relative;
 }
@@ -212,6 +272,75 @@ main #btn-zap {
 }
 main #btn-zap:hover {
   transform: scale(1.1);
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  row-gap: 2rem;
+  background-color: hsl(100, 100%, 4%);
+  color: hsl(180, 100%, 97%);
+}
+footer a {
+  color: hsl(180, 100%, 97%);
+  cursor: pointer;
+  padding: 0.25rem;
+}
+footer a:hover {
+  color: hsl(180, 88%, 87%);
+}
+footer .adress {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 1rem;
+}
+footer .adress .content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+footer .adress .redes {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+footer .adress .redes a {
+  cursor: pointer;
+}
+footer .adress .redes a:hover {
+  transform: scale(1.1);
+}
+footer .links {
+  display: flex;
+  column-gap: 1.5rem;
+  align-items: center;
+}
+footer .links .internos,
+footer .links .externos {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+footer .links .externos {
+  text-align: right;
+}
+footer .copy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+footer .cnpj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
 }
 
 * {
@@ -260,6 +389,7 @@ button {
 p {
   line-height: 1.5rem;
   font-size: 1rem;
+  color: hsl(100, 100%, 4%);
 }
 
 #app {

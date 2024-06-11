@@ -1,0 +1,73 @@
+@use '../../../config/colors.scss';
+@use 'sass:math';
+
+@function converter($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+
+    .limpa-contact {
+        background-color: colors.$b-medium;
+        border-radius: converter(16);
+        padding: converter(16);
+
+        >p {
+            font-weight: 700;
+            line-height: converter(28);
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        row-gap: converter(16);
+
+        p {
+            margin-bottom: converter(16);
+        }
+
+        >input,
+        textarea {
+            &::placeholder {
+                font-size: converter(14);
+                font-family: 'Poppins', sans-serif;
+                color: #aaa;
+            }
+        }
+
+        >input {
+            line-height: converter(24);
+            padding: converter(8) converter(12);
+            border-radius: converter(8);
+            border: 1px solid colors.$b-medium;
+            background-color: colors.$b-light;
+            font-size: converter(16);
+        }
+
+        textarea {
+            height: converter(120);
+            line-height: converter(24);
+            padding: converter(8) converter(12);
+            border-radius: converter(8);
+            border: 1px solid colors.$b-medium;
+            font-size: converter(16);
+            resize: none;
+        }
+
+        button[type='submit'] {
+            padding: converter(16);
+            font-size: converter(16);
+            text-transform: uppercase;
+            border-radius: converter(8);
+            border: 1px solid colors.$b-medium;
+            background-color: colors.$b-light;
+
+            &:hover {
+                background-color: colors.$b-medium;
+            }
+        }
+    }
+}

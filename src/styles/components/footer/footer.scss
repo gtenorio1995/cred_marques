@@ -1,0 +1,88 @@
+@use '../../config/colors.scss';
+@use 'sass:math';
+
+@function converter($px) {
+    @return math.div($px, 16) * 1rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: converter(24);
+    row-gap: converter(32);
+    background-color: colors.$b-dark-text;
+    color: colors.$b-light;
+
+    a {
+        color: colors.$b-light;
+        cursor: pointer;
+        padding: converter(4);
+
+        &:hover {
+            color: colors.$b-medium;
+        }
+    }
+
+    .adress {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        row-gap: converter(16);
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            row-gap: converter(16);
+        }
+
+
+        .redes {
+            display: flex;
+            flex-direction: column;
+            row-gap: converter(16);
+
+            a {
+                cursor: pointer;
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+
+    .links {
+        display: flex;
+        column-gap: converter(24);
+        align-items: center;
+
+        .internos,
+        .externos {
+            display: flex;
+            flex-direction: column;
+            row-gap: converter(8);
+        }
+
+        .externos {
+            text-align: right;
+        }
+    }
+
+    .copy {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .cnpj {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+}
