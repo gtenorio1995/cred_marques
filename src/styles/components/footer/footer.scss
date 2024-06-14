@@ -86,3 +86,11 @@ footer {
         width: 100%;
     }
 }
+
+@media screen and (min-width: 545px) {
+    footer {
+        .links {
+            justify-content: space-between;
+        }
+    }
+}

@@ -70,4 +70,13 @@
             }
         }
     }
+
+}
+
+@media screen and (min-width: 545px) {
+    #contact {
+        .limpa-contact {
+            padding: converter(32);
+        }
+    }
 }
