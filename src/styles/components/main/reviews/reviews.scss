@@ -10,9 +10,10 @@
 
     .cards {
         display: flex;
+        column-gap: converter(16);
 
         .card-reviews {
-            width: 100%;
+            min-width: 100%;
             display: flex;
             flex-direction: column;
             row-gap: converter(16);
@@ -27,7 +28,28 @@
 
                 >img {
                     border-radius: 50%;
+                    width: 100px;
+                    height: 100px;
                 }
+            }
+        }
+
+    }
+
+    .bullets {
+        margin-top: converter(16);
+        display: flex;
+        justify-content: center;
+        column-gap: converter(8);
+
+        .bullet {
+            width: converter(16);
+            height: converter(16);
+            background: colors.$b-medium;
+            border-radius: 50%;
+
+            &.selected {
+                background: colors.$b-medium-dark;
             }
         }
     }
